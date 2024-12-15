@@ -19,3 +19,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .rothwood {
+    font-family: "rothwood", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .rothwood-bold {
+    font-family: "rothwood", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
