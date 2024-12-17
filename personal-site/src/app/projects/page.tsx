@@ -9,7 +9,7 @@ type ProjectProps = {
 export default function Projects() {
 
     return(
-        <div className="flex flex-col place-content-center">
+        <div className="flex flex-col place-items-center">
             <h1 className="m-10 text-6xl rothwood-bold">My Projects</h1>
         <Project 
         projectTitle={"Personal Website"}
