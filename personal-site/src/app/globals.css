@@ -31,4 +31,13 @@ body {
     font-weight: 700;
     font-style: normal;
   }
+  .transition-heading-wrapper {
+    display: inline-block;
+    opacity: 0; /* Start with 0 opacity */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+  }
+  
+  .transition-heading-wrapper {
+    opacity: 1; /* Fade in the text */
+  }
 }
