@@ -10,9 +10,14 @@ export default function WritingContainer() {
     return(
         <div className="flex flex-col items-center">
             <h1 className="m-10 text-6xl rothwood-bold py-8">Writing</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 mx-5 gap-5 lg:gap-16">
+            <form className="flex flex-row justify-center md:justify-normal px-10 md:px-0 mb-7 w-full md:max-w-screen-sm h-8">
+                <input className="border w-9/12 rothwood"
+                type="text" placeholder="Search" />
+                <button className="w-3/12 border rothwood" type="button">Search</button>
+            </form>
+            <div className="grid grid-cols-1 sm:grid-cols-2 mx-10 gap-5 lg:gap-16">
             <Writing
-            writingTitle="Getting my first project deployed"
+            writingTitle="Getting my first project deploy"
             writingDate="December 14th, 2024" />
             <Writing
             writingTitle="Getting my first project deployed"
