@@ -31,13 +31,25 @@ body {
     font-weight: 700;
     font-style: normal;
   }
-  .transition-heading-wrapper {
-    display: inline-block;
-    opacity: 0; /* Start with 0 opacity */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+  .role-enter {
+    opacity: 0;
+    transform: translateY(10px);
   }
   
-  .transition-heading-wrapper {
-    opacity: 1; /* Fade in the text */
+  .role-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+  }
+  
+  .role-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .role-exit-active {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
   }
 }
