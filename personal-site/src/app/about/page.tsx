@@ -38,7 +38,7 @@ useEffect(() => {
         <Image src='/images/my-headshot.webp' alt="headshot of christian garcia" width="350" height="500" />
         <h1 className="md:w-1/2 text-center text-4xl sm:text-4xl p-5 mb-5 rothwood-bold">
         Christian is a <CSSTransition
-            in={role}
+            in={true}
             timeout={500} // Duration of the transition
             classNames="role" // CSS class name for enter/exit transitions
             unmountOnExit // Remove the element from the DOM when exiting
