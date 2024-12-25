@@ -31,25 +31,29 @@ body {
     font-weight: 700;
     font-style: normal;
   }
-  .role-enter {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  
-  .role-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 500ms ease-out, transform 500ms ease-out;
-  }
-  
-  .role-exit {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .role-exit-active {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 500ms ease-in, transform 500ms ease-in;
-  }
+  /* Slide in from the left */
+.role-enter {
+  opacity: 0;
+  transform: translateX(-100%); /* Start from left outside */
+}
+
+/* Active state when sliding in */
+.role-enter-active {
+  opacity: 1;
+  transform: translateX(0); /* Slide into place */
+  transition: opacity 500ms ease-out, transform 500ms ease-out; /* Transition time for opacity and sliding */
+}
+
+/* Slide out to the left */
+.role-exit {
+  opacity: 1;
+  transform: translateX(0); /* Keep it at its normal position initially */
+}
+
+/* Active state when sliding out */
+.role-exit-active {
+  opacity: 0;
+  transform: translateX(-100%); /* Slide out to the left */
+  transition: opacity 500ms ease-in, transform 500ms ease-in; /* Transition time for opacity and sliding out */
+}
 }

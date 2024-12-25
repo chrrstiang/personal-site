@@ -7,9 +7,11 @@ import { CSSTransition } from 'react-transition-group';
 
 export default function About() {
     
-const [role, setRole] = useState<string>("Student");
+const [role, setRole] = useState("Student");
 
-const titles : string[] = [
+const [imageUrl, setImageUrl] = useState('/images/my-headshot.webp')
+
+const titles = [
     "Student",
     "Powerlifter",
     "Programmer",
@@ -32,12 +34,30 @@ useEffect(() => {
     return () => clearInterval(intervalId);
   }, []); // Empty dependency array ensures this effect runs once when the component mounts
 
+  useEffect(() => {
+  switch (role) {
+    case 'Student':
+    case 'Programmer':
+        setImageUrl('/images/my-headshot.webp');
+    break;
+
+    case 'Powerlifter':
+    case 'Entrepreneur':
+        setImageUrl('/images/rcc-christian-v2.webp')
+    break;
+     }}, [role]);
+
     return(
         <div className="flex flex-col justify-center items-center m-2">
         <div className="flex flex-col items-center md:m-10 md:justify-evenly md:flex-row-reverse w:1/2 max-w-screen-md">
-        <Image src='/images/my-headshot.webp' alt="headshot of christian garcia" width="350" height="500" />
+        <Image src={imageUrl} alt="headshot of christian garcia" width="350" height="500" />
         <h1 className="md:w-1/2 text-center text-4xl sm:text-4xl p-5 mb-5 rothwood-bold">
-        Christian is a <span>{role}</span>
+        Christian is a <CSSTransition
+        in={true}
+        timeout={500}
+        classNames="role"
+        unmountOnExit
+        key={role}><span>{role}</span></CSSTransition>
             </h1>
         </div>
         <div className="flex flex-col justify-center mb-20 items-center m-5 sm:m-0 sm:mb-10 gap-10 lg:max-w-screen-lg">
