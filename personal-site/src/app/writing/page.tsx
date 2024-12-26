@@ -7,6 +7,10 @@ type WritingProps = {
 
 export default function WritingContainer() {
 
+    // Logic to make search bar work
+    // When typing in search bar, only items that have those letters in the same order anywhere
+    // in the title will show
+
     return(
         <div className="flex flex-col items-center">
             <h1 className="m-10 text-6xl rothwood-bold py-8">Writing</h1>
