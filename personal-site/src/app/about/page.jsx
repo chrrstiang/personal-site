@@ -91,6 +91,9 @@ useEffect(() => {
             retrieve data through search algorithms such as breadth first search, depth first search, and Dijkstra’s algorithm.</p>
             <h3 className="rothwood-bold sm:w-10/12 text-3xl">Goals</h3>
             <h4>Short-term</h4>
+            <div>
+                
+            </div>
             <div className="hidden">
                 <p>I don’t typically count this website as my first project, although it’s built from scratch. 
                     We weren’t able to deploy our oasis project in the end, so I’m hoping to spend this semester planning & 
