@@ -61,32 +61,44 @@ useEffect(() => {
             </h1>
         </div>
         <div className="flex flex-col justify-center mb-20 items-center m-5 sm:m-0 sm:mb-10 gap-10 lg:max-w-screen-lg">
-        <p className="rothwood sm:w-10/12">BIOGRAPHY:Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
-            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
-            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. </p>
-        <p className="rothwood sm:w-10/12">INTERESTS:Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
-            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
-            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-        <p className="rothwood sm:w-10/12">EXPERIENCE:Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
-            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
-            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-        <p className="rothwood sm:w-10/12">GOALS:Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
-            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
-            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-    </div>
-        </div>
+        <p className="rothwood sm:w-10/12">I’m a student, athlete, son, friend, teammate, boyfriend, uncle, and aspiring entrepreneur. 
+            Coming from Chelsea, Massachusetts, I was fortunate to be able to attend a university so close to home. 
+            I’m currently at Northeastern University studying Computer Science and Behavioral Neuroscience with a minor 
+            in Entrepreneurial Startups, aiming to contribute to a startup centered around neuro-technology as a technical founder.</p>
+            <h3 className="rothwood-bold sm:w-10/12 text-3xl">My Interests Are...</h3>
+        <ul className="rothwood sm:w-10/12">
+            <li className="mt-2"><strong>Entrepreneurship</strong> - Contributing & building something with my own skills intrigues me much more than
+            finding comfort & stability in a role at an already established company.</li>
+            <li className="mt-2"><strong>Powerlifting</strong> - For 3 years, I’ve trained for the sport of Powerlifting 
+                & competed several times, even representing Northeastern at the national collegiate level.</li>
+            <li className="mt-2"><strong>Neuroscience</strong> - Not only on how the brain works, but what we can do with the information we have on the brain is limitless. 
+                Neurable, a company focusing on manufacturing wearables backed by neuroscience & artificial intelligence, 
+                is a key reason in why I got into neuroscience.</li>
+            <li className="mt-2"><strong>Coding</strong> - An obvious one, but coding gives me a feeling of accomplishment. From the little things such as debugging code 
+                & making a feature finally work, to the overall ability to create cool things & virtually whatever I want, 
+                coding feels like video games all over again.</li>
+        </ul>
+        <p className="rothwood sm:w-10/12">While at Northeastern, I had the opportunity to partake in Oasis, a semester-long 
+            club offering students the opportunity to work on a project & learn through weekly workshops. 
+            I teamed up with 4 others, aiming to build out an application management system targeted towards university students 
+            applying to internships & co-ops. Through this experience, I learned to not only collaborate in teams & understand the 
+            process of version control, but I also had the opportunity to work in full-stack, designing & building out components in 
+            React, as building out the form logic to retrieve & push data into Supabase.</p>
+        <p className="rothwood sm:w-10/12">During my time at Northeastern I’ve taken three core computer science classes -  <strong>
+            Discrete Structures, Fundamentals of Computer Science 1, and Introduction to Mathematical Reasoning.
+            </strong> I’ve learned about multiple data structures, some being lists, graphs, and trees. Additionally, 
+            I learned how to manipulate data in these structures through methods such as recursion, list abstractions & sorting algorithms, as well as 
+            retrieve data through search algorithms such as breadth first search, depth first search, and Dijkstra’s algorithm.</p>
+            <h3 className="rothwood-bold sm:w-10/12 text-3xl">Goals</h3>
+            <h4>Short-term</h4>
+            <div className="hidden">
+                <p>I don’t typically count this website as my first project, although it’s built from scratch. 
+                    We weren’t able to deploy our oasis project in the end, so I’m hoping to spend this semester planning & 
+                    building my first full-stack project, & finally deploying it, hopefully acquiring real users.</p>
+            </div>
+            <h4>Long-term</h4>
+            </div>
+            </div>
     )
 };
 
