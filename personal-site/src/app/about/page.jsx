@@ -65,7 +65,7 @@ useEffect(() => {
             Coming from Chelsea, Massachusetts, I was fortunate to be able to attend a university so close to home. 
             I’m currently at Northeastern University studying Computer Science and Behavioral Neuroscience with a minor 
             in Entrepreneurial Startups, aiming to contribute to a startup centered around neuro-technology as a technical founder.</p>
-            <h3 className="rothwood-bold sm:w-10/12 text-3xl">My Interests Are...</h3>
+            <h2 className="rothwood-bold sm:w-10/12 text-3xl">My Interests Are...</h2>
         <ul className="rothwood sm:w-10/12">
             <li className="mt-2"><strong>Entrepreneurship</strong> - Contributing & building something with my own skills intrigues me much more than
             finding comfort & stability in a role at an already established company.</li>
@@ -89,17 +89,17 @@ useEffect(() => {
             </strong> I’ve learned about multiple data structures, some being lists, graphs, and trees. Additionally, 
             I learned how to manipulate data in these structures through methods such as recursion, list abstractions & sorting algorithms, as well as 
             retrieve data through search algorithms such as breadth first search, depth first search, and Dijkstra’s algorithm.</p>
-            <h3 className="rothwood-bold sm:w-10/12 text-3xl">Goals</h3>
-            <h4>Short-term</h4>
+            <h2 className="rothwood-bold sm:w-10/12 text-3xl">Goals</h2>
+            <h3>Short-term</h3>
             <div>
-                
+            
             </div>
             <div className="hidden">
                 <p>I don’t typically count this website as my first project, although it’s built from scratch. 
                     We weren’t able to deploy our oasis project in the end, so I’m hoping to spend this semester planning & 
                     building my first full-stack project, & finally deploying it, hopefully acquiring real users.</p>
             </div>
-            <h4>Long-term</h4>
+            <h3>Long-term</h3>
             </div>
             </div>
     )
