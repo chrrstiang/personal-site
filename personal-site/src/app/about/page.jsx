@@ -78,7 +78,7 @@ useEffect(() => {
                 & making a feature finally work, to the overall ability to create cool things & virtually whatever I want, 
                 coding feels like video games all over again.</li>
         </ul>
-        <p className="rothwood sm:w-10/12">While at Northeastern, I had the opportunity to partake in Oasis, a semester-long 
+        <p className="rothwood sm:w-10/12">While at Northeastern, I had the opportunity to partake in <strong>Oasis</strong>, a semester-long 
             club offering students the opportunity to work on a project & learn through weekly workshops. 
             I teamed up with 4 others, aiming to build out an application management system targeted towards university students 
             applying to internships & co-ops. Through this experience, I learned to not only collaborate in teams & understand the 
@@ -90,7 +90,7 @@ useEffect(() => {
             I learned how to manipulate data in these structures through methods such as recursion, list abstractions & sorting algorithms, as well as 
             retrieve data through search algorithms such as breadth first search, depth first search, and Dijkstra’s algorithm.</p>
             <h2 className="rothwood-bold sm:w-10/12 text-3xl">Goals</h2>
-            <h3>Short-term</h3>
+            <h3 className="rothwood-bold sm:w-10/12 text-2xl">Short-term</h3>
             <div>
             
             </div>
@@ -99,7 +99,7 @@ useEffect(() => {
                     We weren’t able to deploy our oasis project in the end, so I’m hoping to spend this semester planning & 
                     building my first full-stack project, & finally deploying it, hopefully acquiring real users.</p>
             </div>
-            <h3>Long-term</h3>
+            <h3 className="rothwood-bold sm:w-10/12 text-2xl">Long-term</h3>
             </div>
             </div>
     )
