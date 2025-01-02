@@ -3,6 +3,11 @@ import Image from "next/image";
 import { rotation } from "../../../lib/animations";
 import { useState, useEffect } from "react";
 import { CSSTransition } from 'react-transition-group';
+import {Accordion} from '@mui/joy/Accordion';
+import {AccordionDetails} from '@mui/joy/AccordionDetails';
+import {AccordionGroup} from '@mui/joy/AccordionGroup';
+import  { AccordionSummary } from '@mui/joy/AccordionSummary';
+
  
 
 export default function About() {
