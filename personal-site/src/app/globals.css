@@ -21,7 +21,7 @@ body {
 }
 
 @layer components {
-  
+
   .rothwood {
     font-family: "rothwood", serif;
     font-weight: 400;
@@ -30,6 +30,18 @@ body {
   .rothwood-bold {
     font-family: "rothwood", serif;
     font-weight: 700;
+    font-style: normal;
+  }
+
+  .abril-bold {
+    font-family: "abril-fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .aqva-bold {
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
     font-style: normal;
   }
 
