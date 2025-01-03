@@ -32,25 +32,7 @@ body {
     font-weight: 700;
     font-style: normal;
   }
-
-  .abril {
-    font-family: "abril-fatface", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .aqva {
-    font-family: "rl-aqva", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-
-  .bio {
-    font-family: "bio-sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
+  
   .inter {
     font-family: 'inter', serif;
   }
