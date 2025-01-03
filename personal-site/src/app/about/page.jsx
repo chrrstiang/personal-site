@@ -48,7 +48,7 @@ useEffect(() => {
      }}, [role]);
 
     return(
-        <div className="flex flex-col justify-center items-center m-2">
+        <div className="flex flex-col justify-center items-center p-2">
         <AboutHeader imageUrl={imageUrl} role={role} />
         <div className="flex flex-col justify-center mb-20 items-center m-5 sm:m-0 sm:mb-10 gap-10 lg:max-w-screen-lg">
         <p className="rothwood sm:w-10/12">I’m a student, athlete, son, friend, teammate, boyfriend, uncle, and aspiring entrepreneur. 
@@ -107,7 +107,7 @@ function ShortGoals() {
         <AccordionGroup 
             className="w-full sm:w-10/12"
             size="lg">
-                <Accordion className="rothwood">
+                <Accordion>
                     <AccordionSummary>Complete & deploy a full-stack project</AccordionSummary>
                         <AccordionDetails>I don’t typically count this website as my first project, although it’s built from scratch. 
                         We weren’t able to deploy our Oasis project in the end, so I’m hoping to spend this semester planning & 

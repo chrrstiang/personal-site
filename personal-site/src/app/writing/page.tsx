@@ -1,4 +1,7 @@
+'use client';
 import Image from "next/image";
+import { Input, FormControl, FormLabel } from "@mui/joy";
+import { useState } from "react";
 
 type WritingProps = {
     writingTitle: string,
@@ -7,30 +10,35 @@ type WritingProps = {
 
 export default function WritingContainer() {
 
-    // Logic to make search bar work
-    // When typing in search bar, only items that have those letters in the same order anywhere
-    // in the title will show
+    // State to hold user input in search bar
+    const [ searchInput, setSearchInput ] = useState('')
+
+    // handleChange allows for user to type into input
+    function handleChange() {
+        
+    }
+
+    // function to filter out Writing componenets that do not include state string
+    // when search bar empty, all are displayed
 
     return(
         <div className="flex flex-col items-center">
             <h1 className="m-10 text-6xl rothwood-bold py-8">Writing</h1>
-            <form className="flex flex-row justify-center md:justify-normal px-10 md:px-0 mb-7 w-full md:max-w-screen-sm h-8">
-                <input className="border w-9/12 rothwood"
-                type="text" placeholder="Search" />
-                <button className="w-3/12 border rothwood" type="button">Search</button>
-            </form>
+            <FormControl className="flex flex-column sm:place-items-center md:justify-normal px-10 md:px-0 mb-7 w-full md:max-w-screen-sm">
+                <Input className="border w-9/12 rothwood" placeholder="Search" />
+            </FormControl>
             <div className="grid grid-cols-1 sm:grid-cols-2 mx-10 gap-5 lg:gap-16">
             <Writing
-            writingTitle="Getting my first project deploy"
+            writingTitle="Building a full-stack mobile app"
+            writingDate="December 14th, 2024" />
+            <Writing
+            writingTitle="Attempting & failing my first startup"
             writingDate="December 14th, 2024" />
             <Writing
             writingTitle="Getting my first project deployed"
             writingDate="December 14th, 2024" />
             <Writing
-            writingTitle="Getting my first project deployed"
-            writingDate="December 14th, 2024" />
-            <Writing
-            writingTitle="Getting my first project deployed"
+            writingTitle="Collegiate Cup 2024: My best competition yet"
             writingDate="December 14th, 2024" />
             </div>
         </div>
