@@ -107,7 +107,7 @@ function ShortGoals() {
         <AccordionGroup 
             className="w-full sm:w-10/12"
             size="lg">
-                <Accordion>
+                <Accordion className="rothwood">
                     <AccordionSummary>Complete & deploy a full-stack project</AccordionSummary>
                         <AccordionDetails>I don’t typically count this website as my first project, although it’s built from scratch. 
                         We weren’t able to deploy our Oasis project in the end, so I’m hoping to spend this semester planning & 
