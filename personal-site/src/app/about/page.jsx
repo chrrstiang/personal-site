@@ -1,6 +1,5 @@
 'use client';
 import Image from "next/image";
-import { rotation } from "../../../lib/animations";
 import { useState, useEffect } from "react";
 import { Accordion, AccordionSummary, AccordionDetails, AccordionGroup } from "@mui/joy";
  
