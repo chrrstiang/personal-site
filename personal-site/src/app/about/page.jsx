@@ -6,10 +6,13 @@ import { Accordion, AccordionSummary, AccordionDetails, AccordionGroup } from "@
 
 export default function About() {
     
+// state to determine title shown in AboutHeader
 const [role, setRole] = useState("Student");
 
+// state to determine image shown in AboutHeader
 const [imageUrl, setImageUrl] = useState('/images/my-headshot.webp')
 
+//
 const titles = [
     "Student",
     "Powerlifter",
@@ -20,7 +23,7 @@ const titles = [
 useEffect(() => {
     let titleIndex = 0;
 
-    // Function to rotate role
+    // Function to rotate role state
     const rotateRole = () => {
       setRole(titles[titleIndex]);
       titleIndex = (titleIndex + 1) % titles.length; // Cycle through titles
@@ -50,12 +53,11 @@ useEffect(() => {
         <div className="flex flex-col justify-center items-center p-2">
         <AboutHeader imageUrl={imageUrl} role={role} />
         <div className="flex flex-col justify-center mb-20 items-center m-5 sm:m-0 sm:mb-10 gap-10 lg:max-w-screen-lg">
-        <p className="rothwood sm:w-10/12">I’m a student, athlete, son, friend, teammate, boyfriend, uncle, and aspiring entrepreneur. 
-            Coming from Chelsea, Massachusetts, I was fortunate to be able to attend a university so close to home. 
-            I’m currently at Northeastern University studying Computer Science and Behavioral Neuroscience with a minor 
+        <p className="bio sm:w-10/12">I’m a student, athlete, son, friend, teammate, boyfriend, uncle, and aspiring entrepreneur. 
+            Coming from Chelsea, Massachusetts, I’m currently at Northeastern University studying Computer Science and Behavioral Neuroscience with a minor 
             in Entrepreneurial Startups, aiming to contribute to a startup centered around neuro-technology as a technical founder.</p>
-            <h2 className="rothwood-bold sm:w-10/12 text-3xl">My Interests Are...</h2>
-        <ul className="rothwood sm:w-10/12">
+            <h2 className="aqva sm:w-10/12 text-3xl">My Interests Are...</h2>
+        <ul className="inter sm:w-10/12">
             <li className="mt-2"><strong>Entrepreneurship</strong> - Contributing & building something with my own skills intrigues me much more than
             finding comfort & stability in a role at an already established company.</li>
             <li className="mt-2"><strong>Powerlifting</strong> - For 3 years, I’ve trained for the sport of Powerlifting 
@@ -67,21 +69,21 @@ useEffect(() => {
                 & making a feature finally work, to the overall ability to create cool things & virtually whatever I want, 
                 coding feels like video games all over again.</li>
         </ul>
-        <p className="rothwood sm:w-10/12">While at Northeastern, I had the opportunity to partake in <strong>Oasis</strong>, a semester-long 
+        <p className="inter sm:w-10/12">While at Northeastern, I had the opportunity to partake in <strong>Oasis</strong>, a semester-long 
             club offering students the opportunity to work on a project & learn through weekly workshops. 
             I teamed up with 4 others, aiming to build out an application management system targeted towards university students 
             applying to internships & co-ops. Through this experience, I learned to not only collaborate in teams & understand the 
             process of version control, but I also had the opportunity to work in full-stack, designing & building out components in 
             React, as building out the form logic to retrieve & push data into Supabase.</p>
-        <p className="rothwood sm:w-10/12">During my time at Northeastern I’ve taken three core computer science classes -  <strong>
+        <p className="inter sm:w-10/12">During my time at Northeastern I’ve taken three core computer science classes -  <strong>
             Discrete Structures, Fundamentals of Computer Science 1, and Introduction to Mathematical Reasoning.
             </strong> I’ve learned about multiple data structures, some being lists, graphs, and trees. Additionally, 
             I learned how to manipulate data in these structures through methods such as recursion, list abstractions & sorting algorithms, as well as 
             retrieve data through search algorithms such as breadth first search, depth first search, and Dijkstra’s algorithm.</p>
-            <h2 className="rothwood-bold sm:w-10/12 text-3xl">Goals</h2>
-            <h3 className="rothwood-bold sm:w-10/12 text-2xl">Short-term</h3>
+            <h2 className="aqva sm:w-10/12 text-3xl">Goals</h2>
+            <h3 className="aqva sm:w-10/12 text-2xl">Short-term</h3>
             <ShortGoals />
-            <h3 className="rothwood-bold sm:w-10/12 text-2xl">Long-term</h3>
+            <h3 className="aqva sm:w-10/12 text-2xl">Long-term</h3>
             <LongGoals />
             </div>
             </div>
@@ -93,7 +95,7 @@ function AboutHeader({imageUrl, role}) {
     return(
     <div className="flex flex-col items-center md:m-10 md:justify-evenly md:flex-row-reverse w:1/2 max-w-screen-md">
         <Image src={imageUrl} alt="headshot of christian garcia" width="350" height="500" />
-        <h1 className="md:w-1/2 text-center text-4xl sm:text-4xl p-5 mb-5 bio">
+        <h1 className="md:w-1/2 text-center text-4xl sm:text-5xl p-5 mb-5 aqva">
         Christian is a <span>{role}</span>
         </h1>
     </div>
