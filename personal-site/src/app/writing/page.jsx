@@ -38,7 +38,7 @@ export default function WritingContainer() {
             </FormControl>
             <div className="grid grid-cols-1 sm:grid-cols-2 mx-10 gap-5 lg:gap-10">
                 {filterWriting(writings).length > 0 ? 
-                filterWriting(writings).map((w) => <Writing writingTitle={w.title} writingDate={w.date} />) : 
+                filterWriting(writings).map((w) => <Writing key={w.title} writingTitle={w.title} writingDate={w.date} />) : 
                 writings.map((w) => <Writing key={w.title} writingTitle={w.title} writingDate={w.date} />)}
             </div>
         </div>
