@@ -52,7 +52,8 @@ body {
   }
 
   .inter {
-    font-family: 'inter', serif;
+      font-family: "inter-variable",sans-serif;
+      font-variation-settings: 'wght' 500, 'slnt' 0;
   }
 
 }

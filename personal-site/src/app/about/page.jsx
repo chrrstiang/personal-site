@@ -30,7 +30,7 @@ useEffect(() => {
     };
 
     // Set the interval to call rotateRole every 2 seconds (2000 ms)
-    const intervalId = setInterval(rotateRole, 4000);
+    const intervalId = setInterval(rotateRole, 2000);
 
     // Clean up the interval when the component is unmounted
     return () => clearInterval(intervalId);
@@ -53,7 +53,7 @@ useEffect(() => {
         <div className="flex flex-col justify-center items-center p-2">
         <AboutHeader imageUrl={imageUrl} role={role} />
         <div className="flex flex-col justify-center mb-20 items-center m-5 sm:m-0 sm:mb-10 gap-10 lg:max-w-screen-lg">
-        <p className="bio sm:w-10/12">I’m a student, athlete, son, friend, teammate, boyfriend, uncle, and aspiring entrepreneur. 
+        <p className="inter sm:w-10/12">I’m a student, athlete, son, friend, teammate, boyfriend, uncle, and aspiring entrepreneur. 
             Coming from Chelsea, Massachusetts, I’m currently at Northeastern University studying Computer Science and Behavioral Neuroscience with a minor 
             in Entrepreneurial Startups, aiming to contribute to a startup centered around neuro-technology as a technical founder.</p>
             <h2 className="aqva sm:w-10/12 text-3xl">My Interests Are...</h2>
