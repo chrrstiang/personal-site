@@ -12,12 +12,11 @@ const [role, setRole] = useState("Student");
 // state to determine image shown in AboutHeader
 const [imageUrl, setImageUrl] = useState('/images/my-headshot.webp')
 
-//
+// array holding titles displayed
 const titles = [
     "Student",
     "Powerlifter",
-    "Programmer",
-    "Entrepreneur"
+    "Developer"
 ]
 
 useEffect(() => {
@@ -39,13 +38,14 @@ useEffect(() => {
   useEffect(() => {
   switch (role) {
     case 'Student':
-    case 'Programmer':
-        setImageUrl('/images/my-headshot.webp');
+        setImageUrl('/images/grad-pic.webp');
     break;
 
     case 'Powerlifter':
-    case 'Entrepreneur':
-        setImageUrl('/images/rcc-christian-v2.webp')
+        setImageUrl('/images/rcc-christian-v2.webp');
+    break;
+    case "Developer":
+        setImageUrl('/images/my-headshot.webp');
     break;
      }}, [role]);
 
