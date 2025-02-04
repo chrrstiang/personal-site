@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import { Input, FormControl, FormLabel } from "@mui/joy";
+import { Input, FormControl, FormLabel, Typography } from "@mui/joy";
 import { useState } from "react";
 
 export default function WritingContainer() {
@@ -32,7 +32,7 @@ export default function WritingContainer() {
 
     return(
         <div className="flex flex-col items-center">
-            <h1 className="m-10 text-6xl rothwood-bold py-8">Writing</h1>
+            <h1 className="m-10 text-6xl aqva py-8">Writing</h1>
             <FormControl className="flex flex-column sm:place-items-center md:justify-normal px-10 md:px-0 mb-7 w-full md:max-w-screen-sm">
                 <Input onChange={handleChange} className="border w-9/12 rothwood" placeholder="Search" />
             </FormControl>
@@ -49,8 +49,8 @@ function Writing({writingTitle, writingDate}) {
 
     return(
         <div className="flex flex-col items-start">
-            <h1 className="text-3xl rothwood-bold italic underline">{writingTitle}</h1>
-            <h4 className="text-lg rothwood">Posted on {writingDate}</h4>
+            <h1 className="text-3xl aqva italic underline">{writingTitle}</h1>
+            <Typography className="text-lg">Posted on {writingDate}</Typography>
         </div>
     )
 }

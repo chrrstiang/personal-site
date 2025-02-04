@@ -3,21 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ed0000;
+  --foreground: #0750e3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #d41717;
+    --foreground: #115eca;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer components {
@@ -55,5 +54,4 @@ body {
       font-family: "inter-variable",sans-serif;
       font-variation-settings: 'wght' 500, 'slnt' 0;
   }
-
 }

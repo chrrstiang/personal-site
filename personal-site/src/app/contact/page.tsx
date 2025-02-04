@@ -49,7 +49,7 @@ function Links({iconLink, altText, linkHref, appName}: LinksProps) {
         <div className="flex flex-row items-center gap-3">
             <Image src={iconLink} alt={altText} width="30" height="30" />
             <Link href={linkHref}>
-                <span className="text-3xl rothwood-bold italic">{appName}</span>
+                <span className="text-3xl aqva italic">{appName}</span>
                 </Link>
         </div>
     )
