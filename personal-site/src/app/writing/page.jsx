@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Input, FormControl, FormLabel, Typography } from "@mui/joy";
 import { useState } from "react";
+import Link from 'next/link';
 
 export default function WritingContainer() {
 
@@ -49,7 +50,7 @@ function Writing({writingTitle, writingDate}) {
 
     return(
         <div className="flex flex-col items-start">
-            <h1 className="text-3xl aqva italic underline">{writingTitle}</h1>
+            <Link href={`/writing/${writingTitle}`}><h1 className="text-3xl aqva italic underline">{writingTitle}</h1></Link>
             <Typography className="text-lg">Posted on {writingDate}</Typography>
         </div>
     )

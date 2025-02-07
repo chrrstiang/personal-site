@@ -10,10 +10,10 @@ export default function Home() {
         <h1 className="md:w-1/2 text-center text-4xl sm:text-5xl p-5 mb-5 aqva">My name is Christian Garcia</h1>
         </div>
         <ul className="w-1/2 grid grid-cols-1 sm:grid-cols-2 md:mt-10 text-center gap-9">
-          <li className="text-2xl sm:text-3xl rothwood"><Link href="/about">about</Link></li>
-          <li className="text-2xl sm:text-3xl rothwood"><Link href="/projects">projects</Link></li>
-          <li className="text-2xl sm:text-3xl rothwood"><Link href="/writing">writing</Link></li>
-          <li className="text-2xl sm:text-3xl rothwood"><Link href="/contact">contact</Link></li>
+          <li className="text-2xl sm:text-3xl inter"><Link href="/about">about</Link></li>
+          <li className="text-2xl sm:text-3xl inter"><Link href="/projects">projects</Link></li>
+          <li className="text-2xl sm:text-3xl inter"><Link href="/writing">writing</Link></li>
+          <li className="text-2xl sm:text-3xl inter"><Link href="/contact">contact</Link></li>
         </ul>
       </div>
       </div>

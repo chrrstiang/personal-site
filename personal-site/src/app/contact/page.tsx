@@ -12,7 +12,7 @@ export default function Contact() {
 
     return(
         <div className="flex flex-col items-center">
-            <h1 className="m-10 text-6xl rothwood-bold py-8 text-center">My Links</h1>
+            <h1 className="m-10 text-6xl aqva py-8 text-center">My Links</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <Links
                 iconLink="/images/ig-logo.webp"
