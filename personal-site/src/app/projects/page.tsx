@@ -18,11 +18,13 @@ export default function Projects() {
     return(
         <div className="flex flex-col place-items-center">
             <h1 className="m-10 text-6xl aqva">My Projects</h1>
+            <h2 className="m-10 text-4xl aqva">Current</h2>
         <Project 
         projectTitle={"Personal Website"}
-        projectDescription={"Leveraging VSCode, I was able to utilize Next.js and Tailwind CSS to create & deploy my first web project: the one you see now!"}
+        projectDescription={"Leveraging Next.js and the Joy-UI library, I created and deployed my first web project: the one you see now!"}
         projectImage={"/images/my-headshot.webp"}
         projectLink={"/projects/personal-website"} />
+        <h2 className="m-10 text-4xl aqva">Planned</h2>
         <Project
         projectTitle={"OverUnderShoot"}
         projectDescription={"The hub of all powerlifting. Highlight your PRs, receive programming, and join communities at OverUnderShoot."}
@@ -51,7 +53,7 @@ function Project({projectTitle, projectDescription, projectImage, projectLink}: 
 export function Header({projectTitle, projectDescription, projectImage, projectLink}: ProjectProps) {
     
     return(
-    <div className="border flex flex-col items-center md:m-10 md:justify-evenly md:flex-row-reverse w:1/2 max-w-screen-lg">
+    <div className="flex flex-col items-center md:m-10 md:justify-evenly md:flex-row-reverse w:1/2 max-w-screen-lg">
         <Image src={projectImage} alt="headshot of christian garcia" width="350" height="500" />
         <h1 className="md:w-1/2 text-center text-4xl sm:text-5xl p-5 mb-5 aqva">
         {projectTitle}

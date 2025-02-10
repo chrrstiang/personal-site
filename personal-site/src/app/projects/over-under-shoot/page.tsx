@@ -14,42 +14,35 @@ export default function Main() {
             projectLink=""/>
         <div className="flex flex-col justify-center mb-20 items-center m-5 sm:m-0 sm:mb-10 gap-10 lg:max-w-screen-lg">
             <Typography>
-                As my very first "project", I wanted to build a personal website for a few reasons. One reason was to give me the opportunity
-                to showcase anything I'm working on, describe myself to those interested, and overall have a professional hub for Christian Garcia.
-                The second reason which I consider the main reason, was to familiarize myself with the process of beginning a project, deciding
-                which technologies to use, debugging code, using external resources & documentation to figure out a problem, and finally
-                getting something out there. Throughout building this website, I worked in a javascript environment, as I was familiar with
-                it from past courses & projects.
+                OverUnderShoot is an all-in-one powerlifting hub that brings a social aspect to what seems like an individiaulized sport. As a
+                powerlifter who's experienced being apart of a team and not, I know how much of an impact being apart of a team has on not only
+                your performance, but your motivations, attitude towards training, and even your discipline. Thus, I wanted to combine two aspects
+                of powerlifting; the individual part of programming/tracking and the social aspect of sharing/communicating. This is how I plan to do so.
             </Typography>
             <Typography>
-                For this site, I chose Next.js as my react framework, due to the file-based routing system & transferability, as many companies
-                work with this framework for their front-end. Organizing my project and html was extremely easy, but this was my first time
-                working with Tailwind CSS. Styling just the first page of this site took longer than styling the rest combined, but once I got
-                the hang of Tailwind, I felt like I couldn't look back. Working with Next.js components was much easier too, especially using
-                Link components to redirect the user to a different page.
+                If there's one thing I check before every practice, it's my programmed workout for the day, done through a website where my coach
+                shares programs for each day. It's a slow website, crashes often, and isn't very intuitive to use. Additionally, I typically send
+                my coach videos of my sets to his phone number throughout the workout for feedback & in case we need to pivot. Thus, I plan to integrate
+                this into OverUnderShoot, where athletes can check programs shared by their coaches & share videos directly through the app, which for coaches
+                who work other jobs or have a large roster of athletes to keep track of, would give them a centralized workspace to review & communicate with
+                their athletes, seperate from their personal life.
             </Typography>
             <Typography>
-                On top of Next.js, I decided to experiment with a component library, Joy-UI. I liked the look of their components, & this would also
-                speed up the process, as components like Accordions already had their functionality built out. However, this was another technology
-                to learn half-way through the project, and cost me more time learning it & integrating their styling system into Tailwind's
-                styling system. I spent lots of time debugging, and one major problem I ran into was the dark-mode recognition in Joy-UI components
-                compared to standard HTML elements. When a user was in dark mode, the theme changed for HTMl elements, but Joy-UI components failed
-                to recognize it, leaving a mismatch in theme. Although working with Joy-UI expanded my ability to implement components more 
-                efficiently, I plan to decide on a componenet library prior to building, as this would help me avoid compatibility issues & replacing chunks of code.
+                On top of the practical purpose of the app, it also serves to combine the social aspect of the sport. Through communities,
+                users can join groups with others & form new connections, share personal records, and even as a centralized point of communication.
+                At Northeastern Powerlifting, we use slack for communication, and lots of us post our lifts on Instagram. In OverUnderShoot, communities
+                can centralize our team communcation, coach-to-athlete communcation, programming, & milestone sharing.
             </Typography>
             <Typography>
-                The process of building this site went a lot like this, too. I came across many unexpected issues, from my operating system not
-                allowing me to install certain dependencies to smaller issues such as functions not executing properly. This experience taught me a lot
-                about debugging and troubleshooting, as things won't always go as expected. How to search for answers, use my resources, read documentation
-                and logically think through a problem were all skills that I improved on during this project. 
+                For the technologies of this project, I took into consideration the users & features of this application. Coaches, who mostly operate
+                on a computer/laptop will need access to a web application whereas atheletes, who check their phones, would need mobile access. This led me to
+                React Native, as I'll be able to not only create apps compatible on all devices, but I can do this using Javascript and React, the languages I'm
+                most familiar with.
             </Typography>
             <Typography>
-                I plan to continue improving this website beyond adding more content to the site. From styling to transitions & animations, I
-                hope to learn more ways to bring this page to life & communicate my personality through these methods. Additionally, I'm
-                definitely going to work on improving my code reusability. React components are meant to be reusable, yet I
-                find myself making multiple variations that serve a similar purpose. Next.js grants a large use of features and ways to improve
-                a react project, and I felt that I only took advantage of a few. During my next project, <Link href="/projects/over-under-shoot">OverUnderShoot</Link>, I plan to pick a framework
-                with more intent, and overall choosing my technologies more carefully, as this will make building much more efficient and seamless.
+                Currently, I'm still exploring options for component libraries, complementary frameworks, and more. However, I have a strong idea of what I want
+                the application to look like, and I'm excited to carry it out. If you have any questions about the project or know anyone who is interested in helping,
+                I'm easiest to reach through <Link href="https://www.instagram.com/chrrstiang/"><strong className="underline">Instagram</strong></Link>! 
             </Typography>
             </div>
         </div>
