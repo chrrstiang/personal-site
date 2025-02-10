@@ -86,7 +86,7 @@ useEffect(() => {
             I teamed up with 4 others, aiming to build out an application management system targeted towards university students 
             applying to internships & co-ops. Through this experience, I learned to not only collaborate in teams & understand the 
             process of version control, but I also had the opportunity to work in full-stack, designing & building out components in 
-            React, as building out the form logic to retrieve & push data into Supabase.</Typography>
+            React, as well as building out the form logic to retrieve & push data into Supabase.</Typography>
         <Typography className="text-md sm:w-10/12">During my time at Northeastern I’ve taken three core computer science classes -  <strong>
             Discrete Structures, Fundamentals of Computer Science 1, and Introduction to Mathematical Reasoning.
             </strong> I’ve learned about multiple data structures, some being lists, graphs, and trees. Additionally, 
@@ -161,7 +161,7 @@ function LongGoals() {
                 <Accordion>
                     <AccordionSummary>Found & scale a tech startup.</AccordionSummary>
                         <AccordionDetails>
-                            <Typography textColor="red" component="p">A goal of mine since I was 16. As humans, we only have so much time on this Earth. But you can
+                            <Typography component="p">A goal of mine since I was 16. As humans, we only have so much time on this Earth. But you can
                          expand that time through impact. Einstein, who died over half a century ago, is still spoken about to this day
                           because of the lasting impact he left through the theory of relativity. I believe I can do the same through 
                           founding a meaningful company that serves a purpose in this world, and makes people’s lives easier. I want my 
