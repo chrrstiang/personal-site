@@ -33,7 +33,7 @@ useEffect(() => {
 
     // Clean up the interval when the component is unmounted
     return () => clearInterval(intervalId);
-  }, []); // Empty dependency array ensures this effect runs once when the component mounts
+  }, []);
 
   useEffect(() => {
   switch (role) {
