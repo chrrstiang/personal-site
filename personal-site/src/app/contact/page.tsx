@@ -29,16 +29,6 @@ export default function Contact() {
                 altText="LinkedIn Logo"
                 linkHref="https://www.linkedin.com/in/christian-garcia-7992a5269/"
                 appName="LinkedIn" />
-                <Links
-                iconLink="/images/email-logo.webp"
-                altText="Email Logo"
-                linkHref=""
-                appName="Email" />
-                <Links
-                iconLink="/images/resume-logo.webp"
-                altText="Resume Logo"
-                linkHref=""
-                appName="Resume" />
             </div>
         </div>
     )

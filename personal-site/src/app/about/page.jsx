@@ -53,7 +53,7 @@ useEffect(() => {
         <div className="flex flex-col justify-center items-center p-2">
         <AboutHeader imageUrl={imageUrl} role={role} />
         <div className="flex flex-col justify-center mb-20 items-center m-5 sm:m-0 sm:mb-10 gap-10 lg:max-w-screen-lg">
-        <Typography className="text-md sm:w-10/12">I’m a student, athlete, son, friend, teammate, boyfriend, uncle, and aspiring entrepreneur. 
+        <Typography className="text-md sm:w-10/12">I’m a student, athlete, son, friend, teammate, and aspiring entrepreneur. 
             Coming from Chelsea, Massachusetts, I’m currently at Northeastern University studying Computer Science and Behavioral Neuroscience with a minor 
             in Entrepreneurial Startups, aiming to contribute to a startup centered around neuro-technology as a technical founder.</Typography>
             <h2 className="aqva sm:w-10/12 text-3xl">My Interests Are...</h2>
@@ -87,11 +87,11 @@ useEffect(() => {
             applying to internships & co-ops. Through this experience, I learned to not only collaborate in teams & understand the 
             process of version control, but I also had the opportunity to work in full-stack, designing & building out components in 
             React, as well as building out the form logic to retrieve & push data into Supabase.</Typography>
-        <Typography className="text-md sm:w-10/12">During my time at Northeastern I’ve taken three core computer science classes -  <strong>
-            Discrete Structures, Fundamentals of Computer Science 1, and Introduction to Mathematical Reasoning.
-            </strong> I’ve learned about multiple data structures, some being lists, graphs, and trees. Additionally, 
-            I learned how to manipulate data in these structures through methods such as recursion, list abstractions & sorting algorithms, as well as 
-            retrieve data through search algorithms such as breadth first search, depth first search, and Dijkstra’s algorithm.</Typography>
+        <Typography className="text-md sm:w-10/12">During my time at Northeastern I’ve taken several computer science classes, some being  <strong>
+            Discrete Structures, Fundamentals of Computer Science 1 & 2, and Introduction to Mathematical Reasoning.
+            </strong> I’ve worked in both functional & object-oriented languages such as DrRacket & Java, where I've learned best practices 
+            in designing data definitions & functions/methods that manipulate & retrieve data through methods such as recursion, abstractions, 
+            search algorithms and sorting algorithms.</Typography>
             <h2 className="aqva sm:w-10/12 text-3xl">Goals</h2>
             <h3 className="aqva sm:w-10/12 text-2xl">Short-term</h3>
             <ShortGoals />
@@ -183,8 +183,8 @@ function LongGoals() {
                     <AccordionSummary>Create financial comfort for my family while doing what I love.</AccordionSummary>
                         <AccordionDetails>
                             <Typography component="p">At the end of it all, past career & accomplishments, I want to make enough money to comfortably live while
-                         doing what I love. Whether that's investing my money early or leaving my job as a server to focus on school, understanding material,
-                         making connections & working on side-projects, I aim to make decisions keeping this goal in mind.
+                            doing what I love. I hope to raise a family one day, and the last thing I want is to worry about my financial
+                            situation during the most memorable momenents of my family's lives. I aim to make decisions keeping this goal in mind.
                          </Typography>
                         </AccordionDetails>
                 </Accordion>
