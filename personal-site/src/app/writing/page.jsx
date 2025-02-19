@@ -1,10 +1,9 @@
 'use client';
-import Image from "next/image";
-import { Input, FormControl, FormLabel, Typography } from "@mui/joy";
+import { Input, FormControl, Typography } from "@mui/joy";
 import { useState } from "react";
 import Link from 'next/link';
 
-export default function WritingContainer() {
+export default function Page() {
 
     // State to hold user input in search bar
     const [ searchInput, setSearchInput ] = useState('')

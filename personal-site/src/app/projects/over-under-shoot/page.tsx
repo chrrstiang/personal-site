@@ -1,8 +1,8 @@
 import { Typography } from "@mui/joy";
 import Link from "next/link";
-import { Header } from "../page";
+import { Header } from "@/app/components";
 
-export default function Main() {
+export default function Page() {
 
     return(
         <div className="flex flex-col justify-center items-center p-2">

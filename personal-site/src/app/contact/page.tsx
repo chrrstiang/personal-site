@@ -1,14 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
+import { Links } from "../components"
 
-type LinksProps ={
-    iconLink: string
-    altText: string
-    linkHref: string
-    appName: string
-}
-
-export default function Contact() {
+export default function Page() {
 
     return(
         <div className="flex flex-col items-center">
@@ -33,14 +25,3 @@ export default function Contact() {
         </div>
     )
 };
-
-function Links({iconLink, altText, linkHref, appName}: LinksProps) {
-    return(
-        <div className="flex flex-row items-center gap-3">
-            <Image src={iconLink} alt={altText} width="30" height="30" />
-            <Link href={linkHref}>
-                <span className="text-3xl aqva italic">{appName}</span>
-                </Link>
-        </div>
-    )
-}

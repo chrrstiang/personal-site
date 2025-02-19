@@ -1,10 +1,10 @@
 'use client';
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { Accordion, AccordionSummary, AccordionDetails, AccordionGroup, Typography, ThemeProvider, CssBaseline } from "@mui/joy";
-import { createTheme } from '@mui/system';
+import { AccordionGroup, Typography } from "@mui/joy";
+import { Goals } from "../components";
 
-export default function About() {
+export default function Page() {
     
 // state to determine title shown in AboutHeader
 const [role, setRole] = useState("Student");
@@ -81,22 +81,62 @@ useEffect(() => {
                 </Typography>
             </li>
         </ul>
-        <Typography className="text-md sm:w-10/12">While at Northeastern, I had the opportunity to partake in <strong>Oasis</strong>, a semester-long 
+        <Typography className="text-md sm:w-10/12">I had the opportunity to partake in <strong>Oasis</strong>, a semester-long 
             program offering students the opportunity to work on a project & learn through weekly workshops. 
             I teamed up with 4 others, aiming to build out an application management system targeted towards university students 
             applying to internships & co-ops. Through this experience, I learned to not only collaborate in teams & understand the 
-            process of version control, but I also had the opportunity to work in full-stack, designing & building out components in 
-            React, as well as building out the form logic to retrieve & push data into Supabase.</Typography>
+            process of version control, but I also had the opportunity to work in full-stack using <strong>Javascript & React</strong>, 
+            from designing & styling React components to building out form logic to retrieve & push data into a Supabase table.</Typography>
         <Typography className="text-md sm:w-10/12">During my time at Northeastern I’ve taken several computer science classes, some being  <strong>
             Discrete Structures, Fundamentals of Computer Science 1 & 2, and Introduction to Mathematical Reasoning.
-            </strong> I’ve worked in both functional & object-oriented languages such as DrRacket & Java, where I've learned best practices 
+            </strong> I’ve worked in both functional & object-oriented languages such as <strong>DrRacket & Java</strong>, where I've learned best practices 
             in designing data definitions & functions/methods that manipulate & retrieve data through methods such as recursion, abstractions, 
             search algorithms and sorting algorithms.</Typography>
             <h2 className="aqva sm:w-10/12 text-3xl">Goals</h2>
             <h3 className="aqva sm:w-10/12 text-2xl">Short-term</h3>
-            <ShortGoals />
+            <AccordionGroup 
+            className="w-full sm:w-10/12"
+            size="md">
+                <Goals
+                goalTitle={"Complete & deploy a full-stack project"}
+                goalDetails={`I don't typically count this website as my first project, although it’s built from scratch. 
+                        We weren’t able to deploy our Oasis project in the end, so I’m hoping to spend this semester planning & 
+                        building my first full-stack project, & finally deploying it, hopefully acquiring real users.`} />
+                <Goals
+                goalTitle={"Improve study skills & optimize learning system"}
+                goalDetails={`I found myself taking redundant notes & studying for exams for hours during this first 
+                        semester while retaining little information. Practical studying such as practice problems/exams work for me, 
+                        so I want to create a full system to follow so I spend less time worrying about the ‘how’.`} />
+                <Goals
+                goalTitle={"Intern during summer 2025 as a software developer/software engineer."}
+                goalDetails={`I'd like work experience in software engineering, as it’ll give me more of an understanding 
+                        in team collaboration, industry-standard technologies, and overall problem-solving skills. Since I want to 
+                        build a startup one day, it would be nice to intern at a startup or smaller company to familiarize myself 
+                        with the environment I might be creating later down the line, but I wouldn’t pass down the opportunity anywhere.`} />
+            </AccordionGroup>
             <h3 className="aqva sm:w-10/12 text-2xl">Long-term</h3>
-            <LongGoals />
+            <AccordionGroup
+            className="w-full sm:w-10/12"
+            size="md">
+                <Goals
+                goalTitle={"Found & scale a tech startup."}
+                goalDetails={`A goal of mine since I was 16. As humans, we only have so much time on this Earth. But you can
+                         expand that time through impact. Einstein, who died over half a century ago, is still spoken about to this day
+                          because of the lasting impact he left through the theory of relativity. I believe I can do the same through 
+                          founding a meaningful company that serves a purpose in this world, and makes people’s lives easier. I want my 
+                          time to continue past just my lifespan.`} />
+                <Goals
+                goalTitle={"Invest in young startups & become a mentor figure."}
+                goalDetails={`I think it would be really cool to give back to the startup community in a way, by investing & believing 
+                        in startups, after I had the experience of successfully scaling & exiting. My expertise & experience would be 
+                        helpful to others, and the idea of watching others grow & accomplish their dreams that I once had seems like a 
+                        full-circle moment that I would want to experience.`} />
+                <Goals
+                goalTitle={"Establish financial comfort for my family while doing what I love."}
+                goalDetails={`At the end of it all, past career & accomplishments, I want to make enough money to comfortably live while
+                            doing what I love. I hope to raise a family one day, and the last thing I want is to worry about my financial
+                            situation during the most memorable momenents of my family's lives. I aim to make decisions keeping this goal in mind.`} />
+            </AccordionGroup>
             </div>
             </div>
     )
@@ -111,83 +151,5 @@ function AboutHeader({imageUrl, role}) {
         Christian is a <span>{role}</span>
         </h1>
     </div>
-    )
-};
-
-function ShortGoals() {
-    
-    return(
-        <AccordionGroup 
-            className="w-full sm:w-10/12"
-            size="md">
-                <Accordion>
-                    <AccordionSummary>Complete & deploy a full-stack project</AccordionSummary>
-                        <AccordionDetails>
-                            <Typography component="p">I don’t typically count this website as my first project, although it’s built from scratch. 
-                        We weren’t able to deploy our Oasis project in the end, so I’m hoping to spend this semester planning & 
-                        building my first full-stack project, & finally deploying it, hopefully acquiring real users.
-                        </Typography>
-                        </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary>Improve study skills & optimize learning system</AccordionSummary>
-                        <AccordionDetails>
-                            <Typography component="p">I found myself taking redundant notes & studying for exams for hours during this first 
-                        semester while retaining little information. Practical studying such as practice problems/exams work for me, 
-                        so I want to create a full system to follow so I spend less time worrying about the ‘how’.
-                        </Typography>
-                        </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary>Intern during summer 2025 as a software developer/software engineer.</AccordionSummary>
-                        <AccordionDetails>
-                            <Typography component="p">I'd like work experience in software engineering, as it’ll give me more of an understanding 
-                        in team collaboration, industry-standard technologies, and overall problem-solving skills. Since I want to 
-                        build a startup one day, it would be nice to intern at a startup or smaller company to familiarize myself 
-                        with the environment I might be creating later down the line, but I wouldn’t pass down the opportunity anywhere.
-                        </Typography>
-                        </AccordionDetails>
-                </Accordion>
-                </AccordionGroup>
-    )
-};
-
-function LongGoals() {
-    
-    return(
-        <AccordionGroup 
-            className="w-full sm:w-10/12"
-            size="md">
-                <Accordion>
-                    <AccordionSummary>Found & scale a tech startup.</AccordionSummary>
-                        <AccordionDetails>
-                            <Typography component="p">A goal of mine since I was 16. As humans, we only have so much time on this Earth. But you can
-                         expand that time through impact. Einstein, who died over half a century ago, is still spoken about to this day
-                          because of the lasting impact he left through the theory of relativity. I believe I can do the same through 
-                          founding a meaningful company that serves a purpose in this world, and makes people’s lives easier. I want my 
-                          time to continue past just my lifespan.
-                          </Typography>
-                        </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary>Invest in young startups & become a mentor figure.</AccordionSummary>
-                        <AccordionDetails>
-                            <Typography component="p">I think it would be really cool to give back to the startup community in a way, by investing & believing 
-                        in startups, after I had the experience of successfully scaling & exiting. My expertise & experience would be 
-                        helpful to others, and the idea of watching others grow & accomplish their dreams that I once had seems like a 
-                        full-circle moment that I would want to experience.
-                        </Typography>
-                        </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary>Create financial comfort for my family while doing what I love.</AccordionSummary>
-                        <AccordionDetails>
-                            <Typography component="p">At the end of it all, past career & accomplishments, I want to make enough money to comfortably live while
-                            doing what I love. I hope to raise a family one day, and the last thing I want is to worry about my financial
-                            situation during the most memorable momenents of my family's lives. I aim to make decisions keeping this goal in mind.
-                         </Typography>
-                        </AccordionDetails>
-                </Accordion>
-                </AccordionGroup>
     )
 };
