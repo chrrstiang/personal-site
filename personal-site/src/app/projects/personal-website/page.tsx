@@ -29,7 +29,7 @@ export default function Main() {
             <Typography>
                 On top of Next.js, I decided to experiment with a component library, Joy-UI. I liked the look of their components, & this would also
                 speed up the process, as components like Accordions already had their functionality built out. However, this was another technology
-                to learn half-way through the project, and cost me more time learning it & integrating their styling system into Tailwind's
+                to learn half-way through the project, and cost me more time learning it & integrating their styling system into Tailwind&apos;s
                 styling system. I spent lots of time debugging, and one major problem I ran into was the dark-mode recognition in Joy-UI components
                 compared to standard HTML elements. When a user was in dark mode, the theme changed for HTMl elements, but Joy-UI components failed
                 to recognize it, leaving a mismatch in theme. Although working with Joy-UI expanded my ability to implement components more 
@@ -38,7 +38,7 @@ export default function Main() {
             <Typography>
                 The process of building this site went a lot like this, too. I came across many unexpected issues, from my operating system not
                 allowing me to install certain dependencies to smaller issues such as functions not executing properly. This experience taught me a lot
-                about debugging and troubleshooting, as things won't always go as expected. How to search for answers, use my resources, read documentation
+                about debugging and troubleshooting, as things won&apos;t always go as expected. How to search for answers, use my resources, read documentation
                 and logically think through a problem were all skills that I improved on during this project. 
             </Typography>
             <Typography>
