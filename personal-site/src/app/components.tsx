@@ -1,11 +1,16 @@
 import Image from "next/image"
 import { Typography } from "@mui/joy";
 import Link from "next/link";
-import {Accordion, AccordionGroup, AccordionSummary, AccordionDetails} from "@mui/joy";
+import {Accordion, AccordionSummary, AccordionDetails} from "@mui/joy";
 
 // components for about page
 
-export function Goals({goalTitle, goalDetails}: any) {
+type GoalProps = {
+    goalTitle: string,
+    goalDetails: string
+}
+
+export function Goals({goalTitle, goalDetails}: GoalProps) {
     
     return(
         <Accordion>
