@@ -27,19 +27,19 @@ export default function Main() {
             </Typography>
             <Typography>
                 On top of the practical purpose of the app, it also serves to combine the social aspect of the sport. Through communities,
-                users can join groups with others & form new connections, share personal records, and even as a centralized point of communication.
+                users can join groups with others & form new connections, share personal records, and even use them as a centralized point of communication.
                 At Northeastern Powerlifting, we use slack for communication, and lots of us post our lifts on Instagram. In OverUnderShoot, communities
                 can centralize our team communcation, coach-to-athlete communcation, programming, & milestone sharing.
             </Typography>
             <Typography>
                 For the technologies of this project, I took into consideration the users & features of this application. Coaches, who mostly operate
                 on a computer/laptop will need access to a web application whereas atheletes, who check their phones, would need mobile access. This led me to
-                React Native, as I'll be able to not only create apps compatible on all devices, but I can do this using Javascript and React, the languages I&apos;m
+                React Native, as I&apos;ll be able to not only create apps compatible on all devices, but I can do this using Javascript and React, the languages I&apos;m
                 most familiar with.
             </Typography>
             <Typography>
                 Currently, I&apos;m still exploring options for component libraries, complementary frameworks, and more. However, I have a strong idea of what I want
-                the application to look like, and I'm excited to carry it out. If you have any questions about the project or know anyone who is interested in helping,
+                the application to look like, and I&apos;m excited to carry it out. If you have any questions about the project or know anyone who is interested in helping,
                 I&apos;m easiest to reach through <Link href="https://www.instagram.com/chrrstiang/"><strong className="underline">Instagram</strong></Link>! 
             </Typography>
             </div>
