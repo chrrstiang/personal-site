@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Christian Garcia's personal website, showcasing his projects & everything else he's up to",
   keywords: ['personal website', 'portfolio', 'software engineering', 'Northeastern'],
   icons: {
-    icon: '/images/site-icon.webp',
+    icon: '/images/calli-icon.webp',
   },
 };
 
