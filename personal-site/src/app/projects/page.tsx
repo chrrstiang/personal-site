@@ -9,8 +9,9 @@ type ProjectProps = {
     projectLink: string;
 };
 
-type TitleProp = {
-    title: string;
+type HeaderProp = {
+    projectTitle: string;
+    projectImage: string;
 }
 
 export default function Projects() {
@@ -50,7 +51,7 @@ function Project({projectTitle, projectDescription, projectImage, projectLink}: 
     )
 };
 
-export function Header({projectTitle, projectDescription, projectImage, projectLink}: ProjectProps) {
+export function Header({projectTitle, projectImage}: HeaderProp) {
     
     return(
     <div className="flex flex-col items-center md:m-10 md:justify-evenly md:flex-row-reverse w:1/2 max-w-screen-lg">

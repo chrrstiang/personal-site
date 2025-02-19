@@ -1,5 +1,4 @@
 import { Typography } from "@mui/joy";
-import Image from "next/image";
 import Link from "next/link";
 import { Header } from "../page";
 
@@ -10,8 +9,7 @@ export default function Main() {
             <Header 
             projectTitle="OverUnderShoot - Powerlifting Hub" 
             projectImage="/images/rcc-christian-v2.webp"
-            projectDescription=""
-            projectLink=""/>
+            />
         <div className="flex flex-col justify-center mb-20 items-center m-5 sm:m-0 sm:mb-10 gap-10 lg:max-w-screen-lg">
             <Typography>
                 OverUnderShoot is an all-in-one powerlifting hub that brings a social aspect to what seems like an individiaulized sport. As a

@@ -1,7 +1,15 @@
-import type { Metadata } from "next";
+import { Metadata } from 'next';
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+export const metadata: Metadata = {
+  title: 'Christian Garcia',
+  description: "Christian Garcia's personal website, showcasing his projects & everything else he's up to",
+  keywords: ['personal website', 'portfolio', 'software engineering', 'Northeastern'],
+  icons: {
+    icon: '/images/site-icon.webp',
+  },
+};
 
 const inter = Inter({
   subsets: ['latin'],
