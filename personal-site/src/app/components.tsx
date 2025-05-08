@@ -1,6 +1,6 @@
-import Image from "next/image"
+import Image from "next";
 import { Typography } from "@mui/joy";
-import Link from "next/link";
+import Link from "next";
 import {Accordion, AccordionSummary, AccordionDetails} from "@mui/joy";
 
 // components for about page

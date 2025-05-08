@@ -1,5 +1,5 @@
 import { Typography } from "@mui/joy";
-import Link from "next/link";
+import Link from 'next';
 import { Header } from "@/app/components";
 
 export default function Page() {
